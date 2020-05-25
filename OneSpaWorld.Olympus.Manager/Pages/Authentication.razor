@@ -1,0 +1,60 @@
+@page "/authentication/{action}"
+@using Microsoft.AspNetCore.Components.WebAssembly.Authentication
+
+<RemoteAuthenticatorView Action="@Action" OnLogInSucceeded="DoOnLoginSucceded" OnLogOutSucceeded="DoOnLogoutSucceded">
+    <LoggingIn>
+        <b>MINE:</b> You are about to be redirected to....
+    </LoggingIn>
+    <CompletingLoggingIn>
+        <b>MINE:</b> Completing the loggin process....
+    </CompletingLoggingIn>
+    <LogInFailed>
+        <b>MINE:</b> The loggin process has failed....
+    </LogInFailed>
+    <LogOut>
+        <b>MINE:</b> Starting logout process....
+    </LogOut>
+    <CompletingLogOut>
+        <b>MINE:</b> Completing logout process....
+    </CompletingLogOut>
+    <LogOutFailed>
+        <b>MINE:</b> The logout process has failed....
+    </LogOutFailed>
+    <LogOutSucceeded>
+        <b>MINE:</b> The logout process has succeeded....
+    </LogOutSucceeded>
+    <UserProfile>
+        <b>MINE:</b> Seeing user-profile....
+    </UserProfile>
+    <Registering>
+        <b>MINE:</b> Registering user....
+    </Registering>
+</RemoteAuthenticatorView>
+<br />
+<br />
+<div>@(_onActionValue ?? "nothing yet")</div>
+
+@code{
+    [Parameter]
+    public string Action
+    {
+        get;
+        set;
+    } = default!;
+
+    private string? _onActionValue;
+
+    public async Task DoOnLoginSucceded(RemoteAuthenticationState state)
+    {
+        _onActionValue = "Raised OnLoginSucceded event...";
+        Console.WriteLine(_onActionValue);
+        await Task.CompletedTask;
+    }
+
+    public async Task DoOnLogoutSucceded(RemoteAuthenticationState state)
+    {
+        _onActionValue = "Raised OnLogoutSucceded event...";
+        Console.WriteLine(_onActionValue);
+        await Task.CompletedTask;
+    }
+}

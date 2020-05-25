@@ -1,0 +1,42 @@
+<Project>
+
+  <PropertyGroup Label="Package">
+    <Authors>Emilio Vazquez</Authors>
+    <Company>OneSpaWorld (OSW)</Company>
+    <Copyright>OneSpaWorld (OSW) © 2018-2022</Copyright>
+    <AssemblyTitle>Olympus.Selenium</AssemblyTitle>
+    <GenerateDocumentationFile>true</GenerateDocumentationFile>
+    <InformationalVersion>1.0.0</InformationalVersion>
+    <AssemblyVersion>1.0.0.0</AssemblyVersion>
+    <FileVersion>1.0.0.0</FileVersion>
+    <Version>1.0.0</Version>
+    <PackageReleaseNotes>Target (.NET Standard 2.1) SDK 3.1.201 - Runtime 3.1.3</PackageReleaseNotes>
+    <SignAssembly>false</SignAssembly>
+    <RepositoryUrl></RepositoryUrl>
+    <RepositoryType></RepositoryType>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'" Label="Build">
+    <DefineConstants>DEBUG</DefineConstants>
+    <LangVersion>latest</LangVersion>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'" Label="Build">
+    <LangVersion>latest</LangVersion>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup Label="Package References">
+    <PackageReference Include="Microsoft.CodeAnalysis" PrivateAssets="all" Version="3.6.0" />
+    <PackageReference Include="Microsoft.CodeAnalysis.Analyzers" Version="3.0.0">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="Microsoft.CodeAnalysis.FxCopAnalyzers" Version="3.0.0">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers</IncludeAssets>
+    </PackageReference>
+  </ItemGroup>
+
+</Project>

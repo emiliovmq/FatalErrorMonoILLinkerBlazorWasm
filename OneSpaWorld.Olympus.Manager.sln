@@ -1,0 +1,41 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30114.105
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OneSpaWorld.Olympus.Manager", "OneSpaWorld.Olympus.Manager\OneSpaWorld.Olympus.Manager.csproj", "{6ACA1171-2465-4702-8A3E-E93A128A9979}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "benchmarks", "benchmarks", "{46821995-D01F-4163-84EF-F59E8D222E24}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "doc", "doc", "{41E05D2E-212C-4289-B68A-E1C49DA7057D}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "sample", "sample", "{00C2BEB9-0559-4C41-B8BC-E6EBE3A38329}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{A67F310C-2B74-4648-B37C-35C823FAC131}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tools", "tools", "{76AF18C0-728D-4120-A96C-899D0434A9EE}"
+	ProjectSection(SolutionItems) = preProject
+		Directory.Build.props = Directory.Build.props
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{6ACA1171-2465-4702-8A3E-E93A128A9979}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6ACA1171-2465-4702-8A3E-E93A128A9979}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6ACA1171-2465-4702-8A3E-E93A128A9979}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6ACA1171-2465-4702-8A3E-E93A128A9979}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{6ACA1171-2465-4702-8A3E-E93A128A9979} = {A67F310C-2B74-4648-B37C-35C823FAC131}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {C6BFCEEB-925B-4A90-8952-35E936BDEA83}
+	EndGlobalSection
+EndGlobal
